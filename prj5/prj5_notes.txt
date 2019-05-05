@@ -1,0 +1,61 @@
+Classification of data fields
+
+Key
+
+	ListingKey: I am using this as the key to each row in the dataset
+	
+Qualitative - Nominal (Bar Charts - descending order of values - use countplot() function)
+
+	LoanStatus
+	ListingCategory
+	BorrowerState
+
+Qualitative - Ordinal (Bar Charts - order of rating - use Seaborn's countplot() function)
+
+	CreditGrade
+	ProsperRating
+	ProsperScore
+	IncomeRange
+
+Quantitative - Continuous (Histograms - use hist() or distplot() functions)
+
+	BorrowerRate
+	AmountDelinquent
+	StatedMonthlyIncome
+	LoanOriginalAmount
+	LP_NetPrincipalLoss
+
+Quantitative - Discrete (Bar Charts - use countplot() function)
+
+	Term
+	CurrentDelinquencies
+	LoanCurrentDaysDelinquent
+
+Quantitative - Interval (Line plots using errorbar() function)
+
+	LoanOriginationDate
+	
+Bi-variate relationships
+-	LoanStatus  Vs. IncomeRange
+-	LoanStatus Vs. LoanOriginalAmount
+
+-	ListingCategory Vs. IncomeRange
+-	ListingCategory Vs. LoanOriginalAmount
+
+-	BorrowerState Vs. AmountDelinquent
+-	BorrowerState Vs. LoanOriginalAmount
+-	BorrowerState Vs. LP_NetPrincipalLoss
+
+-	CombCreditRating Vs. AmountDelinquent
+-	CombCreditRating Vs. LP_NetPrincipalLoss
+
+-	IncomeRange Vs. AmountDelinquent
+-	IncomeRange Vs. LoanOriginalAmount
+-	IncomeRange Vs. LP_NetPrincipalLoss
+-	IncomeRange Vs. CurrentDelinquencies
+
+-	ProsperScore Vs. AmountDelinquent
+-	ProsperScore Vs. LP_NetPrincipalLoss
+
+-	Term Vs. AmountDelinquent
+-	Term Vs. LoanOriginalAmount
